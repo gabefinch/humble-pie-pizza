@@ -8,7 +8,7 @@ First clone the repo...
 ```````````
 $ git clone https://github.com/gabefinch/humble-pie-pizza.git
 ```````````
-Then open index.html with a web browser.
+Then open `index.html` with a web browser.
 ###Dependencies:
 Built on jQuery-1.11.2, and bootstrap.css.
 Full suite of tests built on Mocha.js and Chai.js
