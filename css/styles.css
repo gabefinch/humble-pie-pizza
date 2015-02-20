@@ -1,19 +1,17 @@
-@import url(http://fonts.googleapis.com/css?family=Montserrat:400,700);
-
+@import url(http://fonts.googleapis.com/css?family=Raleway:400,900);
 body {
   background-color: beige;
 }
 .jumbotron {
-  font-family: 'Montserrat', sans-serif;
-  font-size: 27px;
-  font-weight: bold;
-  line-height: 1.846;
+  font-family: 'Raleway', sans-serif;
   background-color: gold;
   text-align:center;
 }
 
-.jumbotron h2 {
+.jumbotron h1 {
   color: chocolate;
+  font-family: 'Raleway', sans-serif;
+  font-weight: 900;
 }
 
 .contact {
@@ -21,6 +19,14 @@ body {
   text-align:center;
 }
 
+.contact h4 {
+  font-family: 'Raleway', sans-serif;
+  font-weight: 900;
+  color: chocolate;
+}
+.contact h5 {
+
+}
 #total-cost {
   display:inline;
 }
