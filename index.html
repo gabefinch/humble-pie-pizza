@@ -11,48 +11,50 @@
   <body>
     <div class="container">
     <div class="jumbotron">
-      <h2>Humble Pie Pizza Co. <small>fresh. local. delivered hot.</small></h2>
+      <h2>Humble Pie Pizza Co.</h2>
     </div>
       <div class="row">
         <div class="col-sm-6">
           <fieldset>
             <form id="pizza-form" class="form-horizontal well">
               <div class="form-group">
-                <label for="select" class="col-lg-2 control-label">Size</label>
+                <label for="selectSize" class="col-lg-2 control-label">Size</label>
                 <div class="col-lg-10">
-                  <select class="form-control" id="select">
-                    <option>8" Small</option>
-                    <option>12" Medium</option>
-                    <option>22" Large</option>
+                  <select class="form-control" id="selectSize">
+                    <option value="8">8" Small</option>
+                    <option value="12">12" Medium</option>
+                    <option value="22">22" Large</option>
                   </select>
                 </div>
               </div>
               <div class="form-group">
-                <h5>Toppings</h5>
-                <div class="checkbox">
-                  <label>
-                    <input type="checkbox" id="tomato sauce"> Tomato Sauce
-                  </label>
-                </div>
-                <div class="checkbox">
-                  <label>
-                    <input type="checkbox" id="cheese"> Mozarella
-                  </label>
-                </div>
-                <div class="checkbox">
-                  <label>
-                    <input type="checkbox" id="pepperoni"> Pepperoni
-                  </label>
-                </div>
-                <div class="checkbox">
-                  <label>
-                    <input type="checkbox" id="anchovies"> Anchovies
-                  </label>
-                </div>
-                <div class="checkbox">
-                  <label>
-                    <input type="checkbox" id="arugala"> Arugala
-                  </label>
+                <label for="checkbox" class="col-lg-2 control-label">Toppings</label>
+                <div class="col-lg-10">
+                  <div class="checkbox">
+                    <label>
+                      <input type="checkbox" id="tomato-sauce" checked> Tomato Sauce
+                    </label>
+                  </div>
+                  <div class="checkbox">
+                    <label>
+                      <input type="checkbox" id="cheese" checked> Mozarella
+                    </label>
+                  </div>
+                  <div class="checkbox">
+                    <label>
+                      <input type="checkbox" id="pepperoni"> Pepperoni
+                    </label>
+                  </div>
+                  <div class="checkbox">
+                    <label>
+                      <input type="checkbox" id="anchovies"> Anchovies
+                    </label>
+                  </div>
+                  <div class="checkbox">
+                    <label>
+                      <input type="checkbox" id="arugala"> Arugala
+                    </label>
+                  </div>
                 </div>
               </div>
               <div class="form-group">
@@ -66,16 +68,22 @@
         <div class="col-sm-6">
           <h6>Your Order</h6>
           <div id="order" class="well">
-            <h4>Don't be shy, add a pie!</h4>
+            <h4 id="no-pie">Don't be shy, add a pie!</h4>
+          </div>
+          <h6>Total pieces</h6>
+          <div id="total-pieces" class="well">
+            0
           </div>
           <h6>Order Total</h6>
           <div id="total-cost" class="well">
             $0.00
           </div>
-          <h6>Call us with your order:</h6>
-          <h4>Humble Pie Pizza Co.</h4>
-          <h6>(503)-"ANCHOVY"</h6>
-          <h6>(503)-262-4689</h6>
+          <div class="contact"
+            <h6>Call us with your order:</h6>
+            <h4><b>Humble Pie Pizza Co.</b></h4>
+            <h6>(503)-"ANCHOVY"</h6>
+            <h6>(503)-262-4689</h6>
+          </div>
         </div>
       </div>
     </div>

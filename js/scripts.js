@@ -25,6 +25,37 @@ Pizza.piePrice = function() {
   return total;
 }
 
-$(function(){
+var allPizzas = [];
 
+$(function(){
+  $('#pizza-form').submit(function(event){
+    event.preventDefault();
+    newPizza = Object.create(Pizza);
+    newPizza.size = parseInt($('#selectSize').val());
+    newPizza.toppings = [];
+    var pieText = '<h4>' + newPizza.size + '" pizza </h4>'
+    if ($('#tomato-sauce').prop('checked')) {
+      newPizza.toppings.push('tomato sauce');
+      pieText = pieText + '<h6>tomato sauce</h6>';
+      }
+    if ($('#cheese').prop('checked')) {
+      newPizza.toppings.push('cheese');
+      pieText = pieText + '<h6>mozarella</h6>';
+      }
+    if ($('#pepperoni').prop('checked')) {
+      newPizza.toppings.push('pepperoni');
+      pieText = pieText + '<h6>pepperoni</h6>';
+      }
+    if ($('#anchovies').prop('checked')) {
+      newPizza.toppings.push('anchovies');
+      pieText = pieText + '<h6>anchovies</h6>';
+      }
+    if ($('#arugala').prop('checked')) {
+      newPizza.toppings.push('arugala');
+      pieText = pieText + '<h6>arugala</h6>';
+      }
+    $('#no-pie').remove();
+    $('#order').append(pieText);
+
+  });
 });
