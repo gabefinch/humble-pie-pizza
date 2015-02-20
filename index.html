@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Humble Pie Pizza Co.</title>
+    <link href='http://fonts.googleapis.com/css?family=Montserrat' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="css/bootstrap-paper.css">
+    <link href="css/styles.css" rel="stylesheet" type="text/css">
+    <script src="js/jquery-1.11.2.js"></script>
+    <script src="js/scripts.js"></script>
+  </head>
+  <body>
+    <div class="container">
+    <div class="jumbotron">
+      <h2>Humble Pie Pizza Co. <small>fresh. local. delivered hot.</small></h2>
+    </div>
+      <div class="row">
+        <div class="col-sm-6">
+          <fieldset>
+            <form id="pizza-form" class="form-horizontal well">
+              <div class="form-group">
+                <label for="select" class="col-lg-2 control-label">Size</label>
+                <div class="col-lg-10">
+                  <select class="form-control" id="select">
+                    <option>8" Small</option>
+                    <option>12" Medium</option>
+                    <option>22" Large</option>
+                  </select>
+                </div>
+              </div>
+              <div class="form-group">
+                <h5>Toppings</h5>
+                <div class="checkbox">
+                  <label>
+                    <input type="checkbox" id="tomato sauce"> Tomato Sauce
+                  </label>
+                </div>
+                <div class="checkbox">
+                  <label>
+                    <input type="checkbox" id="cheese"> Mozarella
+                  </label>
+                </div>
+                <div class="checkbox">
+                  <label>
+                    <input type="checkbox" id="pepperoni"> Pepperoni
+                  </label>
+                </div>
+                <div class="checkbox">
+                  <label>
+                    <input type="checkbox" id="anchovies"> Anchovies
+                  </label>
+                </div>
+                <div class="checkbox">
+                  <label>
+                    <input type="checkbox" id="arugala"> Arugala
+                  </label>
+                </div>
+              </div>
+              <div class="form-group">
+                <div class="col-lg-10 col-lg-offset-2">
+                  <button type="submit" class="btn btn-primary">Add to order</button>
+                </div>
+              </div>
+            </form>
+          </fieldset>
+        </div>
+        <div class="col-sm-6">
+          <h6>Your Order</h6>
+          <div id="order" class="well">
+            <h4>Don't be shy, add a pie!</h4>
+          </div>
+          <h6>Order Total</h6>
+          <div id="total-cost" class="well">
+            $0.00
+          </div>
+          <h6>Call us with your order:</h6>
+          <h4>Humble Pie Pizza Co.</h4>
+          <h6>(503)-"ANCHOVY"</h6>
+          <h6>(503)-262-4689</h6>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
