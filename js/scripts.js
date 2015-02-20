@@ -47,6 +47,7 @@ $(function(){
   $('#pizza-form').submit(function(event){
     event.preventDefault();
     newPizza = Object.create(Pizza);
+    allPizzas.push(newPizza);
     newPizza.size = parseInt($('#selectSize').val());
     newPizza.style = $('#selectStyle').val()
     newPizza.toppings = [];
@@ -75,6 +76,7 @@ $(function(){
     $('#order').append(pieText);
     var pieces = parseInt($('#total-pieces').text());
     $('#total-pieces').text(pieces + newPizza.sliceCount());
+    $('#total-pizzas').text(allPizzas.length);
     var cost = parseFloat($('#total-cost').text());
     $('#total-cost').text((cost + newPizza.piePrice()).toFixed(2));
 
