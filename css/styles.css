@@ -11,16 +11,16 @@ body {
   background-color: gold;
   text-align:center;
 }
-#pizza-slice {
-  width:10%;
+
+.jumbotron h2 {
+  color: chocolate;
 }
-.pizza-cat {
-  width:100%;
-}
+
 .contact {
   background-color: gold;
   text-align:center;
 }
+
 #total-cost {
   display:inline;
 }
