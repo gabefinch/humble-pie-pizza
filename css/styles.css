@@ -1,5 +1,8 @@
 @import url(http://fonts.googleapis.com/css?family=Montserrat:400,700);
 
+body {
+  background-color: beige;
+}
 .jumbotron {
   font-family: 'Montserrat', sans-serif;
   font-size: 27px;
@@ -18,4 +21,6 @@
   background-color: gold;
   text-align:center;
 }
+#total-cost {
+  display:inline;
 }

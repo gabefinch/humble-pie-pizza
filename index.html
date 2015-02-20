@@ -18,12 +18,21 @@
           <fieldset>
             <form id="pizza-form" class="form-horizontal well">
               <div class="form-group">
+                <label for="selectStyle" class="col-lg-2 control-label">Style</label>
+                <div class="col-lg-10">
+                  <select class="form-control" id="selectStyle">
+                    <option value="sicilian" selected>Sicilian (round)</option>
+                    <option value="neopolitan">Neopolitan (rectangular)</option>
+                  </select>
+                </div>
+              </div>
+              <div class="form-group">
                 <label for="selectSize" class="col-lg-2 control-label">Size</label>
                 <div class="col-lg-10">
                   <select class="form-control" id="selectSize">
-                    <option value="8">8" Small</option>
-                    <option value="12">12" Medium</option>
-                    <option value="22">22" Large</option>
+                    <option value="8">Small - 8"</option>
+                    <option value="12" selected>Medium - 12"</option>
+                    <option value="22">Large - 22"</option>
                   </select>
                 </div>
               </div>
@@ -71,18 +80,14 @@
             <h4 id="no-pie">Don't be shy, add a pie!</h4>
           </div>
           <h6>Total pieces</h6>
-          <div id="total-pieces" class="well">
-            0
-          </div>
+          <div class="well"><h5 id="total-pieces">0</h5>(Most folks can eat 2-3 pieces)</div>
           <h6>Order Total</h6>
-          <div id="total-cost" class="well">
-            $0.00
-          </div>
-          <div class="contact"
+          <div class="well">$<h5 id="total-cost">0.00</h5></div>
+          <div class="contact well"
             <h6>Call us with your order:</h6>
-            <h4><b>Humble Pie Pizza Co.</b></h4>
-            <h6>(503)-"ANCHOVY"</h6>
-            <h6>(503)-262-4689</h6>
+            <h4>Humble Pie Pizza Company</h4>
+            <h5>(503)-"ANCHOVY"</h5>
+            <h5>(503)-262-4689</h5>
           </div>
         </div>
       </div>
