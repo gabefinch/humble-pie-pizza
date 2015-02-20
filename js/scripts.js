@@ -1,10 +1,10 @@
 var Pizza = {size: 'medium',
             toppings: undefined,
             style: 'sicilian',
-            delivery: false,};
+            delivery: false};
 
-Pizza.sliceCount = function() {
-  if (this.style === 'sicilian'){
+Pizza.sliceCount = function () {
+  if (this.style === 'sicilian') {
     if (this.size === 8) {
     return 6;
     } else if (this.size === 12) {
@@ -39,19 +39,19 @@ Pizza.piePrice = function() {
   }
   total += toppingRate * (this.toppings.length - 2);
   return total;
-}
+};
 
 var allPizzas = [];
 
 $(function(){
-  $('#pizza-form').submit(function(event){
+  $('#pizza-form').submit(function(event) {
     event.preventDefault();
-    newPizza = Object.create(Pizza);
+    var newPizza = Object.create(Pizza);
     allPizzas.push(newPizza);
     newPizza.size = parseInt($('#selectSize').val());
-    newPizza.style = $('#selectStyle').val()
+    newPizza.style = $('#selectStyle').val();
     newPizza.toppings = [];
-    var pieText = '<h6>' + newPizza.size + '" ' + newPizza.style + ' pizza </h6>'
+    var pieText = '<h6>' + newPizza.size + '" ' + newPizza.style + ' pizza </h6>';
     if ($('#tomato-sauce').prop('checked')) {
       newPizza.toppings.push('tomato sauce');
       pieText = pieText + '<p>-tomato sauce</p>';
