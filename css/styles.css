@@ -30,3 +30,6 @@ body {
 #total-cost {
   display:inline;
 }
+#order p {
+  line-height: 30%;
+}

@@ -51,26 +51,26 @@ $(function(){
     newPizza.size = parseInt($('#selectSize').val());
     newPizza.style = $('#selectStyle').val()
     newPizza.toppings = [];
-    var pieText = '<h4>' + newPizza.size + '" ' + newPizza.style + ' pizza </h4>'
+    var pieText = '<h6>' + newPizza.size + '" ' + newPizza.style + ' pizza </h6>'
     if ($('#tomato-sauce').prop('checked')) {
       newPizza.toppings.push('tomato sauce');
-      pieText = pieText + '<h6>-tomato sauce</h6>';
+      pieText = pieText + '<p>-tomato sauce</p>';
       }
     if ($('#cheese').prop('checked')) {
       newPizza.toppings.push('cheese');
-      pieText = pieText + '<h6>-mozarella</h6>';
+      pieText = pieText + '<p>-mozarella</p>';
       }
     if ($('#pepperoni').prop('checked')) {
       newPizza.toppings.push('pepperoni');
-      pieText = pieText + '<h6>-pepperoni</h6>';
+      pieText = pieText + '<p>-pepperoni</p>';
       }
     if ($('#anchovies').prop('checked')) {
       newPizza.toppings.push('anchovies');
-      pieText = pieText + '<h6>-anchovies</h6>';
+      pieText = pieText + '<p>-anchovies</p>';
       }
     if ($('#arugala').prop('checked')) {
       newPizza.toppings.push('arugala');
-      pieText = pieText + '<h6>-arugala</h6>';
+      pieText = pieText + '<p>-arugala</p>';
       }
     $('#no-pie').remove();
     $('#order').append(pieText);
